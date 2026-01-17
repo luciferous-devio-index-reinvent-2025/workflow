@@ -16,9 +16,6 @@ def main():
     logger.debug("start fetch notion")
     flag_notion = step_03_fetch_notion(env=env, master_data=master_data)
 
-    with open("tmp/sample_data.json", "w") as f:
-        json.dump(master_data.model_dump(), f, indent=2, ensure_ascii=False)
-
     step_04_upload(env=env, master_data=master_data)
 
 
