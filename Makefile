@@ -11,6 +11,9 @@ execute:
 	rm -f std.log
 	uv run python main.py
 
+upload-log:
+	uv run python upload_log.py
+
 .PHONY: \
 	format \
 	fmt-python
