@@ -1,5 +1,8 @@
 on:
   workflow_dispatch: 
+  schedule:
+    - cron: "30 20 * * *"
+  
 
 permissions:
   id-token: write
