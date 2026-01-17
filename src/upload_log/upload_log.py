@@ -64,7 +64,7 @@ def load_log() -> bytes:
 
 @logging_function(logger, with_args=False, with_return=False)
 def compress_log(*, binary: bytes) -> bytes:
-    return compress(data=binary, level=10)
+    return compress(data=binary, level=22)
 
 
 @logging_function(logger, with_args=False)
